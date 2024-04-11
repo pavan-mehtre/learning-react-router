@@ -1,10 +1,11 @@
-# learning-react-router
-# 1. Create createBrowserRouter and Add React Router provider to your main app
-```javascript
+import React from 'react'
+import ReactDOM from 'react-dom/client'
 import {
   createBrowserRouter,
   RouterProvider
 } from 'react-router-dom';
+
+import './index.css'
 
 const router = createBrowserRouter([
   {
@@ -15,8 +16,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    # React Router Wrapper
     <RouterProvider router={router} />
   </React.StrictMode>,
 )
-```
